@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Streamlit Dark Mode Theme */
+:root {
+  --background: #0E1117;
+  --foreground: #FAFAFA;
+  --card: #262730;
+  --card-foreground: #FAFAFA;
+  --border: #444444;
+  --muted: #8A8D91;
+  --muted-foreground: #C1C1C1;
+  --primary: #FF4B4B;
+  --primary-foreground: #FFFFFF;
+  --secondary: #1F1F1F;
+  --secondary-foreground: #FAFAFA;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Chat bubbles */
+.chat-user {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: 12px 12px 0px 12px;
+}
+
+.chat-assistant {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  border-radius: 12px 12px 12px 0px;
+}
+
+/* Input field */
+input, textarea {
+  background-color: var(--secondary);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #e64545;
+}
+
+/* Markdown Styling */
+.markdown {
+  line-height: 1.6;
+}
+
+.markdown code {
+  background: #1E1E1E;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
